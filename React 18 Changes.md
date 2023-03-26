@@ -20,11 +20,11 @@ React 18 alpha version was just announced. The theme of React 18 is to make the 
 
 Let's take a look at the major updates of React 18:
 
-## Root API
+### Root API
 
 React 18 introduces Root API `ReactDOM.createRoot`. Before React 18, we used ReactDOM.render to render a component to the page. Going forward with React 18, we will use ReactDOM.createRoot to create a root, and then pass the root to the render function. The good news is that your current code with `ReactDOM.render` will still work, however, it is strongly recommended to start transitioning to createRoot as render will be marked deprecated starting React 18. The current `ReactDOM.render` is only provided to ease the transition to React 18.
 
-### React 17
+#### React 17
 
 ```js
 import ReactDOM from 'react-dom';
@@ -35,7 +35,7 @@ const container = document.getElementById('app');
 ReactDOM.render(<App />, container);
 ```
 
-### React 18
+#### React 18
 
 ```js
 import ReactDOM from 'react-dom';
@@ -50,7 +50,7 @@ const root = ReactDOM.createRoot(container);
 root.render(<App />);
 ```
 
-## Automatic batching ( Out of the box, opt-out available):
+### Automatic batching ( Out of the box, opt-out available):
 
 Batching is the process of grouping multiple state updates into one to prevent multiple re-renders. Previously, React batched state updates that happened in a single event callback managed by React event system, however state updates that happened outside the event were not batched.
 
@@ -99,7 +99,7 @@ startTransition(() => {
 });
 ```
 
-### How is it different from debouncing or setTimeout?
+#### How is it different from debouncing or setTimeout?
 
 1. startTransition executes immediately unlike setTimeout. setTimeout has a guaranteed delay, whereas startTransition's delay depends on the speed of the device, and other urgent renders.
 2. startTransition updates can be interrupted unlike setTimeout and won't freeze the page.
