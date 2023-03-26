@@ -5,9 +5,9 @@ Hello React developers, you've probably heard of strict mode. But what the hell 
 Strict mode is a set of development tools that help you catch potential problems in your code before they become actual bugs. When you enable strict mode in your React application, you're essentially telling React to turn on a bunch of extra checks👀 and warnings that are designed to help you write better code. These checks and warnings can catch things like:
 
 1. Components with side effects
-1. Deprecated or unsafe lifecycle methods
-1. Unsafe use of certain built in functions
-1. Duplicate keys in lists
+2. Deprecated or unsafe lifecycle methods
+3. Unsafe use of certain built in functions
+4. Duplicate keys in lists
 
 ![react-strict-mode](https://res.cloudinary.com/practicaldev/image/fetch/s--0DFhwYBf--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/10tfwojwoyip5ld20yec.gif)
 
