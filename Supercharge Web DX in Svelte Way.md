@@ -9,7 +9,7 @@ authorUrl: https://ashrhmn.com
 authorPosition: Blockchain Intern
 ---
 
-# What is Svelte & SvelteKit?
+## What is Svelte & SvelteKit?
 
 There are tons of great resources and tutorials out there, so here just a high-level introduction.
 
@@ -17,30 +17,30 @@ There are tons of great resources and tutorials out there, so here just a high-l
 
 [SvelteKit](http://kit.svelte.dev) is a Svelte framework for building web applications of all sizes, with a beautiful development experience and flexible filesystem-based routing.
 
-## How Svelte saves developer's mental fatigue?
+### How Svelte saves developer's mental fatigue?
 
-### 1. Less Javascript & boilerplate
+#### 1. Less Javascript & boilerplate
 
 ![react-vs-svelte](assets/react-svelte.jpeg)
 
 This is my true feeling. Why should I write lines of code just to update a value?
 Reactivity, this is all I need. Svelte really gives me productivity to focus on designing great UX but don't compromise on DX.
 
-### 2. Svelte Store - Native State Management
+#### 2. Svelte Store - Native State Management
 
 I totally get the "goodness" of immutability, especially after I learned how redux works.
 Even I switched to RTK - Redux ToolKit later, I still feel awful to write so many codes JUST to update a value safely in React.
 
 Reactivity shines again, svelte store is easy to use and customizable. Co-worker and future self can easily understand it's a store with a $ prefix. I didn't feel a pain to manage global stores when my Svelte project scaled.
 
-### 3. HTML & CSS as a first class citizen
+#### 3. HTML & CSS as a first class citizen
 
 You can write native html & css (scoped) without a pain. That's a huge win for me because I just don't like className & CSS-in-JS.
 
 Svelte released style directives in 3.46 which provides handy syntax sugar to write dynamic styles. You can check Geoff's
 (Svelte maintainer) [article](https://geoffrich.net/posts/style-directives/) for use cases.
 
-### 4. SvelteKit - Go-to framework to build Svelte app
+#### 4. SvelteKit - Go-to framework to build Svelte app
 
 React is a javascript library but not a framework, which means you need to figure out how to build your app properly. I believe for most React beginners, what we need is a single recommendation but not paradox of choice. What is the best option which gives me overall the best outcome with least amount of trade-offs?
 
@@ -85,7 +85,7 @@ export default config
 
 * **Use Vite under the hood:** As I mentioned earlier, Vite had saved me from javascript tooling hell. After two months development in SvelteKit, everything works like a charm.
 
-### 5. Svelte Community
+#### 5. Svelte Community
 
 I think this is the most important reason that I love Svelte so much, and it's definately part of the DX.
 
