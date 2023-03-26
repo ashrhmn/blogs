@@ -1,3 +1,7 @@
+---
+title: "Some title"
+---
+
 # This is my detailed blog
 
 ## Intro
