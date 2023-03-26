@@ -56,7 +56,7 @@ Batching is the process of grouping multiple state updates into one to prevent m
 
 However, with automatic batching, all updates, even within promises, setTimeouts, will be batched. Check this example -
 
-```
+```js
 function handleClick() {
     console.log("=== click ===");
     setCount((c) => c + 1); // Does not re-render yet
@@ -85,7 +85,7 @@ Showing a visual feedback to the user is important and therefore urgent. Searchi
 
 By marking non-urgent UI updates as "transitions" , React will know which updates to prioritize making it easier to optimize rendering and get rid of stale rendering. Updates marked in non-urgent `startTransition` can be interrupted by urgent updates such as clicks or key presses.
 
-```
+```js
 import { startTransition } from 'react';
 
 
