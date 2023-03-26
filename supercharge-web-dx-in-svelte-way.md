@@ -21,7 +21,7 @@ There are tons of great resources and tutorials out there, so here just a high-l
 
 ### 1. Less Javascript & boilerplate
 
-![react-vs-svelte](/images/blogs/react-svelte.jpeg)
+![react-vs-svelte](assets/react-svelte.jpeg)
 
 This is my true feeling. Why should I write lines of code just to update a value?
 Reactivity, this is all I need. Svelte really gives me productivity to focus on designing great UX but don't compromise on DX.

@@ -12,7 +12,7 @@ Express server is one of the best backend program to create from simple to enter
 
 ## Structure
 
-![Express Server Structure](/images/blogs/express-js-cover.png)
+![Express Server Structure](assets/express-js-cover.png)
 
 In ExpressJS, everything is jus a middleware. Each and every route acts as a middleware and serve various endpoints as defined in these middlewares
 
@@ -20,4 +20,4 @@ In ExpressJS, everything is jus a middleware. Each and every route acts as a mid
 
 Express has become a lot popular now a days and is being used in bigger companies as their main backend
 
-![Express Cover](/images/blogs/express-js-1.png)
+![Express Cover](assets/express-js-1.png)

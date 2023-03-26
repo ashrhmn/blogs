@@ -1,6 +1,6 @@
 ---
 title: Everything you need to know about React 18
-cover: /images/blogs/react-18.png
+cover: assets/react-18.png
 date: "2022-02-23"
 authorName: Ashik
 authorUrl: https://ashrhmn.com

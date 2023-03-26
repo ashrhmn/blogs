@@ -2,7 +2,7 @@
 title: "Django Crash Course (Updated March 2022)"
 date: "2022-03-22"
 published: true
-cover: /images/blogs/django.png
+cover: assets/django.png
 categories: ["Python","Django","Backend"]
 desc: Django is a Python-based free and open-source web framework that follows the model–template–views architectural pattern
 ---
@@ -16,7 +16,7 @@ Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat h
 4. Vulnus se Latreus
 5. Aptumque bis
 
-![DJANGO Serious](/images/blogs/django.png)
+![DJANGO Serious](assets/django.png)
 ## Turpius Aegides membris colat volentes fallere
 
 Ille fida formosus, et addunt viscera perdidit ad pondere quia tellus consequitur et quoque scinditque in. Ratis laborum instabat quaedam partem Phoebus, manus _partibus poenas_. Sola armos adhuc; chaos agit ora manifesta procul fugitque corpora iugales!

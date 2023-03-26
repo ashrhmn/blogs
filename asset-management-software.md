@@ -2,7 +2,7 @@
 title: "Asset Management Software"
 published: true
 categories: ["Software Development"]
-cover: /images/blogs/asset-management-software.png
+cover: assets/asset-management-software.png
 authorName: Ahsan Habib Polok
 date: "2021-09-20"
 authorPosition: Business Analyst, DeepchainLabs
@@ -44,7 +44,7 @@ ManageEngine AssetExplorer is a web-based ITAM tool aimed at managing IT assets 
 
 The starting price is $995 per year for 250 IT assets.
 
-![Image](/images/blogs/asset-management-software.png)
+![Image](assets/asset-management-software.png)
 
 ## Asset Panda
 
