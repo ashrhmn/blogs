@@ -10,10 +10,10 @@ Let me give an example, let's say that I want to adjust the margin and the paddi
 
 ```css
 .vanilla {
-  margin-top: 12px,
-  margin-bottom: 12px,
-  padding-left: 12px,
-  padding-right: 12px
+  margin-top: 12px;
+  margin-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 ```
 ```html
