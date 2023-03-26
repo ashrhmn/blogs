@@ -14,3 +14,9 @@ const sum = arr.reduce((prev,curr)=>prev+curr,0); // 10
 ```
 
 ![The fish](assets/asset1.jpeg)
+
+## Make Typescript better
+
+Typescript by default is an awesome typesystem for JavaScript. But still it is not perfect. There are things that are not just perfect but design.
+
+We have got `any` and `unknown` types. 
