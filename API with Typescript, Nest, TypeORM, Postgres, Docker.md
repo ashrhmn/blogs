@@ -267,8 +267,8 @@ Now, add a script to package.json
 "seed":"npx ts-node src/typeorm/seeds/main.seed.ts",
 ```
 
-in a new terminal on the IDE run the code `npm start` to synchronize the database
+In a new terminal on the IDE run the code `npm start` to synchronize the database
 
-kill the application, and then run the script `npm run seed` to populate the database
+Kill the application, and then run the script `npm run seed` to populate the database
 
-Its Done! now if you run `npm start` and send a `GET` request on `localhost:3000/users`, you should get all the users from the seed.
+It's Done! now if you run `npm start` and send a `GET` request on `localhost:3000/users`, you should get all the users from the seed.
