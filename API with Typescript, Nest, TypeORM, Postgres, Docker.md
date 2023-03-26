@@ -56,7 +56,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 export class AppModule {}
 ```
 
-BTW: you can delete app.service and app.controller
+BTW: you can delete `app.service` and `app.controller`
 
 Now, we should create our first module with nest cli:
 `nest g resource modules/users`
@@ -238,7 +238,7 @@ async function runSeed() {
 runSeed();
 ```
 
-Now, we should create our 'docker-compose.yml' file in the root folder, and then run `docker-compose up`:
+Now, we should create our `docker-compose.yml` file in the root folder, and then run `docker-compose up`:
 
 ```yml
 # docker-compose.yml
@@ -256,9 +256,9 @@ services:
       - "5432:5432"
 ```
 
-Some useful docker commands:
-`docker ps` to list all containers
-`docker stop my_container_name` to stop a specific container
+**Some useful docker commands:**
+
+`docker ps` to list all containers. `docker stop my_container_name` to stop a specific container
 
 Now, add a script to package.json
 
