@@ -10,7 +10,7 @@ desc: ScienceSoft defines and categorizes asset management, discusses useful fea
 ---
 
 
-# Asset management: the essence
+## Asset management: the essence
 
 Asset management is a process of tracking, organizing, and maintaining a company’s assets. It covers numerous types of assets, both tangible and intangible, depending on business type and scope. Asset management can be roughly categorized as follows:
 
@@ -21,7 +21,7 @@ Asset management is a process of tracking, organizing, and maintaining a company
 
 A common goal of asset management is to optimize the utilization of assets throughout their lifecycle, increase productivity, and reduce operational costs. Asset management software helps businesses achieve that via collecting asset data, tracking asset lifecycle, and providing automated reports for company management to analyze.
 
-# Why to use asset management software?
+## Why to use asset management software?
 
 - **Improved accuracy of asset documentation** as compared to manual document management, since human errors like typos or accidental omissions are minimized.
 - **Better asset accounting**. Asset management software help be aware of what assets are available and where, who should work on them and when. For example, the software helps identify ghost assets as well as avoid asset theft and loss.
@@ -30,8 +30,8 @@ A common goal of asset management is to optimize the utilization of assets throu
 - **Improved maintenance management**. The preventive maintenance feature of an asset management solution help achieve stable and continuous operation of assets.
 - **Better compliance**. Keeping in mind all license entitlements and requirements of relevant laws and regulations can be challenging. An asset management system helps minimize legal risks and reduce non-compliance costs.
 
-# Popular asset management software
-## AssetExplorer
+## Popular asset management software
+### AssetExplorer
 
 ManageEngine AssetExplorer is a web-based ITAM tool aimed at managing IT assets and offering features for physical asset management. Its features include:
 
@@ -46,7 +46,7 @@ The starting price is $995 per year for 250 IT assets.
 
 ![Image](assets/asset-management-software.png)
 
-## Asset Panda
+### Asset Panda
 
 Asset Panda is a cloud-based asset management and tracking platform that offers a range of features like barcode scanning, unlimited users, and custom reporting. Its features include:
 
