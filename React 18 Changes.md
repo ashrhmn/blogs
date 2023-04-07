@@ -1,21 +1,3 @@
----
-title: Everything you need to know about React 18
-cover: assets/react-18.png
-date: "2022-02-23"
-authorName: Ashik
-authorUrl: https://ashrhmn.com
-authorPosition: Blockchain Intern
-published: true
-categories: ["React","JavaScript","Frontend"]
-desc: React is a free and open-source front-end JavaScript library for building user interfaces based on UI components
-toc:
-  [
-    { name: "Root API", id: "root-api" },
-    { name: "React 17", id: "react-17" },
-    { name: "React 18", id: "react-18" },
-  ]
----
-
 React 18 alpha version was just announced. The theme of React 18 is to make the UI more performant by removing janky user experiences by introducing out of the box features and improvements powered by "concurrent rendering". React 18 introduces minimal breaking changes.
 
 Let's take a look at the major updates of React 18:
