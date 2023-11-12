@@ -42,7 +42,9 @@ For example, if you want to disable the `no-img-element` rule, you can do so by 
 Often, there's a request like this:
 
 `https://example.com/api/posts-by-user-id/undefined`
+
 or
+
 `https://example.com/api/posts-by-user-id/undefined/categories`
 
 Why make the extra request, make round trip to the backend and hung up backend with `Internal Server Error` if the param error is not handled well? You get extra rejected requests as well when backend throws the error as `undefined is not a valid number/UUID`. Always make sure you have a valid `id` before sending the request.
