@@ -67,10 +67,18 @@ const { data: blogData } = useQuery({
 Often, we have code like this,
 
 ```jsx
-<Image src={config.API_URL + "public/uploads" + user.image} />
+<Image src={config.API_BASE_URL + "public/uploads" + user.image} />
 ```
 
 And you have the same damn thing in 40 different files and 5 times in each file. The prefix `public/uploads` can get changed. You will have to change it in 40 different files. Instead just make an utility function and use it everywhere.
+
+```js
+// Pipe to a URL sanitizer if possible
+const constructStaticFileUrl = (...paths:string[])=> config.API_BASE_URL+"public/uploads"+paths.join("");
+
+<Image src={constructStaticFileUrl(user.image)} />
+<Image src={constructStaticFileUrl(user.id,"images","cover.png")} />
+```
 
 ## The middle ground for DRY Pattern
 
