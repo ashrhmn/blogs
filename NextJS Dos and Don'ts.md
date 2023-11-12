@@ -74,15 +74,15 @@ And you have the same damn thing in 40 different files and 5 times in each file.
 
 ## The middle ground for DRY Pattern
 
-DRY pattern is a good pattern to follow. But sometimes, it is not always the best pattern to follow. For example, you have a component that is used in 2 different pages. You want to make sure that the component is not duplicated. So you create a component and import it in both pages. But what if you want to change something in the component in one page but not the other? You will add conditional logic to the component to make sure it renders differently in different pages. Now, you get more and more logic coming for the component and you keep adding more logic to it. It is getting harder to maintain. What to do?-
+DRY pattern is a good pattern to follow. But sometimes, it is not always the best. For example, you have a component that is used in 2 different pages. You want to make sure that the component is not duplicated. So you create a generic component and use it in both pages. But what if you want to change something in the component in one page but not the other? You will add conditional logic to the component to make sure it renders differently in different pages. Now, you are getting more and more logic coming for the component and you keep adding more and more logic to it. It is getting harder to maintain. What to do?-
 
-- If the component is used in 2 pages, it is okay to duplicate the component. It is not the end of the world. It is better to have 2 components that are easy to maintain than 1 component that is hard to maintain.
+- If the component is duplicated just 2 times, it is okay to duplicate it. It is not the end of the world. It is better to have 2 components that are easy to maintain than 1 component that is hard to maintain.
 
-- Decide a middle ground (eg. 3 times) and if the component is duplicated more than 3 pages, then create a separate generic component.
+- Decide a middle ground (eg. 3 times) and if the component is duplicated more than 3 times, then create a separate generic component.
 
-- If your generic component is getting too complex with tons of logic, break that component into smaller components as well.
+- If your generic component is getting too complex with tons of logic, break that component into smaller components as well and use logic only to the smaller components where necessary.
 
-- If that is still hard to maintain the logics for each usages, create a separate hook for the logic or create different hooks for different logics and use inside the component where needed.
+- If it is still hard to maintain the logics for each usages, create a separate hook for the logic or create different hooks for different logics and use inside the component where needed.
 
 ## Stop over using `console.log`
 
