@@ -2,25 +2,25 @@ Next.js is a popular React framework for building modern web applications. It si
 
 ## Key Benefits of Using Next.js
 
-### 1. **Server-Side Rendering (SSR)**
+### **Server-Side Rendering (SSR)**
 Next.js allows you to render your web pages on the server before they’re sent to the browser. This can improve SEO and provide faster load times, as the HTML is already built when it reaches the user.
 
-### 2. **Static Site Generation (SSG)**
+### **Static Site Generation (SSG)**
 For pages that don’t require frequent updates, Next.js offers static site generation, which pre-builds HTML pages at build time. This is ideal for performance and security since the content is served as a static file.
 
-### 3. **API Routes**
+### **API Routes**
 Next.js makes it easy to create a full-stack application. You can define API routes directly in your Next.js app without the need for a separate backend server. This is great for building lightweight APIs and handling form submissions.
 
-### 4. **Image Optimization**
+### **Image Optimization**
 Next.js provides built-in image optimization, allowing for automatic resizing, lazy loading, and serving optimized images to improve performance.
 
-### 5. **File-based Routing**
+### **File-based Routing**
 With Next.js, routing is straightforward. You can create routes by simply adding files to the `pages` directory. This removes the need for third-party routing libraries and keeps things simple.
 
-### 6. **TypeScript Support**
+### **TypeScript Support**
 Next.js has seamless TypeScript support out of the box. If you're building modern applications with TypeScript, Next.js ensures smooth integration with no extra configuration required.
 
-### 7. **Fast Refresh**
+### **Fast Refresh**
 During development, Next.js offers fast refresh, allowing you to see code changes instantly without reloading the entire application.
 
 ## How to Get Started with Next.js
