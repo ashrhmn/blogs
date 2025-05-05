@@ -221,6 +221,5 @@ Bravo, it's fixed :)
 
 The [legacy Context API](https://legacy.reactjs.org/docs/legacy-context.html) is deprecated in React and has been replaced with the new Context API. React Strict Mode can help you detect any usage of the legacy Context API and encourage you to switch to the [new API](https://react.dev/reference/react/useContext).
 
-![legacy-context](https://res.cloudinary.com/practicaldev/image/fetch/s--3U_0Wt5S--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/iowjhzc795mngti4ayo0.png)
 
 If you're not already using strict mode, it's definitely worth considering!!!
