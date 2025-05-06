@@ -53,6 +53,8 @@
 
 ### Components
 
+Components 1,2,3,4 are required for an MVP
+
 1. **P2P Layer (libp2p)**
 
    - **Peer Discovery** via mDNS/DHT
@@ -92,14 +94,7 @@
    - Peer discovery for local devnet (optional via libp2p)
    - RPC calls to Core Node for balance & tx submission
 
-4. **Explorer (React + Go API)**
-
-   - **Indexer Service** (Go) subscribes to libp2p PubSub or polls JSON-RPC
-   - Stores blocks/txs in database
-   - Exposes REST/GraphQL for frontend
-   - Real-time updates via WebSocket
-
-5. **Bridge Module (Go)**
+4. **Bridge Module (Go)**
 
    - **Relayer Service** listens to:
 
@@ -107,6 +102,13 @@
      - Cirkle withdrawal events (via libp2p PubSub or RPC)
 
    - Initiates cross-chain mint/burn transactions
+
+5. **Explorer (React + Go API)**
+
+   - **Indexer Service** (Go) subscribes to libp2p PubSub or polls JSON-RPC
+   - Stores blocks/txs in database
+   - Exposes REST/GraphQL for frontend
+   - Real-time updates via WebSocket
 
 6. **Monitoring & Metrics**
 
