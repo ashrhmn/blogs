@@ -3,16 +3,14 @@
 ```
                                               ┌─────────────┐
                                               │  Explorer   │
-                                              │  (React +   │
-                                              │   Go API)   │
+                                              │             │
                                               └─────▲───────┘
                                                     │ JSON-RPC
                                                     │
 ┌────────────┐       libp2p Gossipsub       ┌───────────────┐
 │            │ ◄──────────────────────────► │               │
 │  CLI Wallet│      libp2p PubSub &         │  Core Node    │
-│  (Go CLI)  │       Peer Discovery         │   (Go)        │
-│            │                              │               │
+│            │       Peer Discovery         │               │
 └────────────┘                              └───────────────┘
        ▲                                            ▲
        │                                            │
@@ -44,8 +42,8 @@
 ┌───────────────┐                              ┌────┴────┐
 │  Relayer /    │                              │  Bridge │
 │ Monitoring    │                              │ Module  │
-│ & Metrics     │                              │ (Go)    │
-│ (Prom/Graf)   │                              └─────────┘
+│ & Metrics     │                              └─────────┘
+│ (Prom/Graf)   │                              
 └───────────────┘
 ```
 
@@ -87,14 +85,14 @@ Components 1,2,3,4 are required for an MVP
      - JSON-RPC & gRPC for wallets, explorer, and relayer
      - REST for health checks
 
-3. **Wallet (Go CLI & MetaMask-compatible)**
+3. **Wallet (CLI & MetaMask-compatible)**
 
    - Key management (BIP-39, secp256k1)
    - Transaction creation & signing
    - Peer discovery for local devnet (optional via libp2p)
    - RPC calls to Core Node for balance & tx submission
 
-4. **Bridge Module (Go)**
+4. **Bridge Module**
 
    - **Relayer Service** listens to:
 
@@ -103,7 +101,7 @@ Components 1,2,3,4 are required for an MVP
 
    - Initiates cross-chain mint/burn transactions
 
-5. **Explorer (React + Go API)**
+5. **Explorer (React/NextJS)**
 
    - **Indexer Service** (Go) subscribes to libp2p PubSub or polls JSON-RPC
    - Stores blocks/txs in database
