@@ -51,68 +51,50 @@
 
 ### Components
 
-Components 1,2,3,4 are required for an MVP
+Components 1, 2, 3, 4 are required for an MVP
 
 1. **P2P Layer (libp2p)**
-
    - **Peer Discovery** via mDNS/DHT
    - **Gossipsub** for:
-
      - Transaction propagation
      - Block propagation
-
    - **Secure Channels** (Noise/TLS)
 
 2. **Core Node (Go)**
-
    - **Consensus Engine**
-
      - PoS validator selection
      - BFT finality
-
    - **State Machine**
-
      - EVM-compatible execution (go-ethereum’s `evm` package)
      - Merkle trie for world state
-
    - **Mempool & Block Assembler**
-
      - Transaction validation, gas accounting
      - Block creation by elected validator
-
    - **APIs**
-
      - JSON-RPC & gRPC for wallets, explorer, and relayer
      - REST for health checks
 
 3. **Wallet (CLI & MetaMask-compatible)**
-
    - Key management (BIP-39, secp256k1)
    - Transaction creation & signing
    - Peer discovery for local devnet (optional via libp2p)
    - RPC calls to Core Node for balance & tx submission
 
 4. **Bridge Module**
-
    - **Relayer Service** listens to:
-
      - Ethereum deposit events (via web3)
      - Cirkle withdrawal events (via libp2p PubSub or RPC)
-
    - Initiates cross-chain mint/burn transactions
 
 5. **Explorer (React/NextJS)**
-
    - **Indexer Service** (Go) subscribes to libp2p PubSub or polls JSON-RPC
    - Stores blocks/txs in database
    - Exposes REST/GraphQL for frontend
    - Real-time updates via WebSocket
 
 6. **Monitoring & Metrics**
-
    - **Prometheus** exporter in Core Node and Explorer
    - **Grafana** dashboards for:
-
      - Peer count, mempool size, block times
      - Validator performance & uptime
 
