@@ -117,7 +117,40 @@ loop every BLOCK_TIME:
 
 ---
 
-## 9. Roadmap Overview
+## 9. External Sequencers – How Common Are They?
+
+| Roll-up / L2         | Sequencer Model                                   | Notes                                                                           |
+| -------------------- | ------------------------------------------------- | ------------------------------------------------------------------------------- |
+| **Arbitrum One**     | *Single* off-chain sequencer run by Offchain Labs | Provides fast ordering; fall-back trustless “AnyTrust” mode if it goes offline. |
+| **Optimism Mainnet** | *Single* external sequencer (Optimism PBC)        | Plans to decentralise with the forthcoming “Cannon” fault-proof stack.          |
+| **StarkNet**         | *Single* sequencer operated by StarkWare          | Sequencer batches Cairo txs, hands them to an off-chain STARK prover.           |
+| **zkSync Era**       | *Single* external sequencer run by Matter Labs    | Batcher → off-chain SNARK prover → Ethereum verifier.                           |
+| **Scroll**           | External sequencer (community-operated roadmap)   | Initial mainnet has centralised operator while proof system is optimised.       |
+
+> **Pattern:** Every production roll-up today begins with **one external sequencer** for UX and operational simplicity, then introduces a rotating set or L1-elected committee later.
+
+---
+
+## 10. Off-chain Provers
+
+| Chain / Roll-up                                                     | Off-chain Prover?                                                                                           | Details                                                                                                           |
+| ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| **Polygon PoS**                                                     | **No**                                                                                                      | It relies on validator honesty and a checkpoint Merkle root; no ZK/Fraud proofs.                                  |
+| **Polygon zkEVM**                                                   | **Yes**                                                                                                     | A separate prover cluster (Groth16 → Plonky2 roadmap) generates validity proofs; only the proof is sent on-chain. |
+| **All ZK roll-ups (StarkNet, zkSync, Scroll, Polygon zkEVM, etc.)** | **Yes**                                                                                                     | Proof generation is CPU/GPU-intensive, so it always runs off-chain.                                               |
+| **Optimistic roll-ups**                                             | *No validity proof*. They rely on on-chain fraud-proofs (also computed off-chain but only when challenged). |                                                                                                                   |
+
+---
+
+#### Why external sequencers & provers are typical
+
+* **Latency** – one fast operator can give users sub-second confirmation, whereas BFT rounds across many validators take longer.
+* **Gas efficiency** – batching and proof generation off-chain lets the roll-up post one compact commitment instead of every tx.
+* **Engineering boot-strap** – centralised first, then gradually decentralise once economics and tooling mature (e.g., Arbitrum’s upcoming “permissionless” sequencers).
+
+---
+
+## 11. Roadmap Overview
 
 | Phase                  | Key Milestones                                |
 | ---------------------- | --------------------------------------------- |
