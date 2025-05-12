@@ -9,7 +9,7 @@
 |-------|---------|------------|
 | **Krown L2 Roll-up** | Fast UX, EVM contracts | • Blocks ≈ 2 s via PoS + BFT • off-chain **Sequencer** orders & batches txs <br> • ZK validity proof for each checkpoint |
 | **L1** | Security & settlement | • `RollupInbox` stores `{batchHash, stateRoot, proof}` <br>• Escrow & exit processing |
-| **Data-Availability** | Permanent calldata storage | • **v1** → post calldata in the same L1 tx <br>• **v2** → Celestia/EigenDA with hash anchored on-chain |
+| **Data-Availability** | Permanent calldata storage | • **MVP** → post calldata in the same L1 tx <br>• **Full Build** → Celestia/EigenDA with hash anchored on-chain |
 
 ---
 
@@ -71,7 +71,7 @@ Publishing calldata lets anyone:
 * Generate fresh proofs.
 * Fork the chain if Sequencer misbehaves.
 
-**v1** post calldata on Ethereum (max security).<br> **v2** switch to Celestia/EigenDA (cheaper) while anchoring the hash on-chain.
+**MVP** post calldata on Ethereum (max security).<br> **Full Build** switch to Celestia/EigenDA (cheaper) while anchoring the hash on-chain.
 
 ---
 
@@ -162,3 +162,13 @@ loop every BLOCK_TIME:
 | **Testnet**            | Full audit, public faucet, Grafana dashboards |
 | **Mainnet**            | Genesis, validator onboarding, DAO governance |
 
+---
+
+## 11. MVP vs Full Build
+
+| Domain                    | **MVP**                                                                        | **Full Build**                                                                                      |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
+| **Sequencer**             | • **Single off-chain Sequencer** run by core team <br>• Simple fee-priority ordering                               | • Multi-Sequencer node <br>• Fair-ordering <br>• Governance-controlled rotation keys |
+| **Batch & Proof**         | • SNARK/STARK prover cluster off-chain <br>• Checkpoint rule: every 20 blocks or 60 s                              | • Proof recursion / aggregation for bigger batches                                            |
+| **Data Availability**     | • Calldata in the same Ethereum tx (max security)                                                                  | • Switch / add **Celestia / EigenDA** with hash anchor                                                                         |
+| **Bridge**                | • ERC-20 deposit / SPHINCS+ withdrawal <br>• Manual relayer daemon                                                 | • Multi-asset bridge, ERC-721, ERC-1155 |
