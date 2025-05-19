@@ -29,7 +29,6 @@
 - **2.2.2** Implement quantum-safe TLS connection wrappers (20h)
 - **2.2.3** Create secure key exchange protocol (16h)
 - **2.2.4** Build secure session management (12h)
-- **2.2.5** Test and benchmark secure channel performance (8h)
 
 ### 2.3 Peer Discovery & Management
 - **2.3.1** Implement Kademlia DHT for peer discovery (24h)
@@ -65,7 +64,6 @@
 - **3.2.5** Implement spam protection mechanisms (16h)
 - **3.2.6** Build transaction replacement rules (12h)
 - **3.2.7** Create mempool API endpoints (12h)
-- **3.2.8** Implement mempool persistence (16h)
 
 ### 3.3 Transaction Propagation
 - **3.3.1** Implement transaction broadcast protocol (16h)
@@ -88,12 +86,11 @@
 - **4.2.2** Implement prevote message handling (20h)
 - **4.2.3** Implement precommit message handling (20h)
 - **4.2.4** Create block proposal mechanism (24h)
-- **4.2.5** Implement vote collection and tallying (20h)
+- **4.2.5** Implement vote collection (20h)
 - **4.2.6** Build 2/3 stake threshold detection (12h)
 - **4.2.7** Create timeouts and round advancement (16h)
-- **4.2.8** Implement fork choice rule (24h)
-- **4.2.9** Create equivocation detection (16h)
-- **4.2.10** Build consensus state machine (12h)
+- **4.2.8** Create equivocation detection (16h)
+- **4.2.9** Build consensus state machine (12h)
 
 ### 4.3 Block Creation & Validation
 - **4.3.1** Define block structure format (12h)
@@ -137,8 +134,7 @@
 - **6.1.5** Implement storage operations (SSTORE/SLOAD) (24h)
 - **6.1.6** Implement contract call operations (CALL) (24h)
 - **6.1.7** Implement LOG operations (16h)
-- **6.1.8** Create ERC-20 specific optimizations (16h)
-- **6.1.9** Implement CREATE/CREATE2 operations (24h)
+- **6.1.8** Implement CREATE/CREATE2 operations (24h)
 
 ### 6.2 Gas Accounting
 - **6.2.1** Define gas costs for operations (12h)
@@ -276,47 +272,18 @@
 - **11.3.4** Build address and balance tracking (20h)
 - **11.3.5** Implement event logs indexing (20h)
 - **11.3.6** Create REST API for explorer (24h)
-- **11.3.7** Implement GraphQL API for explorer (32h)
 
-## 12. Testing & Security
-### 12.1 Unit Testing
-- **12.1.1** Create test framework setup (16h)
-- **12.1.2** Implement cryptography primitive tests (24h)
-- **12.1.3** Create consensus mechanism tests (32h)
-- **12.1.4** Build state trie tests (24h)
-- **12.1.5** Implement EVM execution tests (32h)
-- **12.1.6** Create bridge functionality tests (24h)
-- **12.1.7** Build sequencer and batch tests (24h)
-- **12.1.8** Implement ZK proof generation tests (24h)
+## 12. Operations & Deployment
+### 12.1 Infrastructure Automation
+- **12.1.1** Design infrastructure architecture (16h)
+- **12.1.2** Create Terraform deployment scripts (24h)
+- **12.1.3** Implement Ansible configuration management (24h)
+- **12.1.4** Build Docker containerization (20h)
+- **12.1.5** Create Kubernetes deployment manifests (20h)
+- **12.1.6** Implement CI/CD deployment pipelines (16h)
 
-### 12.2 Integration Testing
-- **12.2.1** Create end-to-end test scenarios (24h)
-- **12.2.2** Implement deposit flow tests (20h)
-- **12.2.3** Create withdrawal flow tests (20h)
-- **12.2.4** Build checkpoint submission tests (24h)
-- **12.2.5** Implement network resilience tests (24h)
-- **12.2.6** Create performance benchmark tests (24h)
-- **12.2.7** Build security edge case tests (24h)
-
-## 13. Operations & Deployment
-### 13.1 Infrastructure Automation
-- **13.1.1** Design infrastructure architecture (16h)
-- **13.1.2** Create Terraform deployment scripts (24h)
-- **13.1.3** Implement Ansible configuration management (24h)
-- **13.1.4** Build Docker containerization (20h)
-- **13.1.5** Create Kubernetes deployment manifests (20h)
-- **13.1.6** Implement CI/CD deployment pipelines (16h)
-
-### 13.2 Monitoring & Alerting
-- **13.2.1** Design monitoring architecture (16h)
-- **13.2.2** Implement Prometheus exporters (24h)
-- **13.2.3** Create Grafana dashboards (20h)
-- **13.2.4** Build alerting rules and notifications (16h)
-- **13.2.5** Implement log aggregation (16h)
-- **13.2.6** Create performance monitoring (12h)
-
-### 13.3 Testnet Deployment
-- **13.3.1** Design testnet architecture (12h)
-- **13.3.2** Create genesis configuration (16h)
-- **13.3.3** Implement faucet service (24h)
-- **13.3.4** Build validator onboarding process (20h)
+### 12.2 Testnet Deployment
+- **12.2.1** Design testnet architecture (12h)
+- **12.2.2** Create genesis configuration (16h)
+- **12.2.3** Implement faucet service (24h)
+- **12.2.4** Build validator onboarding process (20h)
