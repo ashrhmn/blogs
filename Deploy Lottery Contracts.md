@@ -142,7 +142,7 @@ Choose which network you want to deploy to:
 
 The system will ask you several questions. Answer them carefully:
 
-#### 1. Check for Existing Contracts
+#### Check for Existing Contracts
 
 If you've deployed before, you'll see:
 
@@ -156,7 +156,7 @@ Do you want to overwrite existing deployments and deploy new contracts?
 - Choose **No** if you want to keep existing contracts
 - Choose **Yes** if you want to deploy new ones (this will replace the old ones)
 
-#### 2. Private Key
+#### Private Key
 
 ```
 Enter your private key:
@@ -165,7 +165,7 @@ Enter your private key:
 **⚠️ IMPORTANT**: Your private key will be hidden as you type (you won't see the characters). This is for security.
 Paste your private key and press Enter.
 
-#### 3. VRF Coordinator
+#### VRF Coordinator
 
 ```
 Enter VRF Coordinator address:
@@ -173,7 +173,7 @@ Enter VRF Coordinator address:
 
 Paste the VRF coordinator address you copied from the VRF dashboard (e.g., `0x9Ddf...8B1B`).
 
-#### 4. VRF Key Hash
+#### VRF Key Hash
 
 ```
 Enter VRF Key Hash:
@@ -181,7 +181,7 @@ Enter VRF Key Hash:
 
 Paste the VRF key hash you copied from the VRF dashboard (e.g., `0x787d...`).
 
-#### 5. VRF Subscription ID
+#### VRF Subscription ID
 
 ```
 Enter VRF Subscription ID:
@@ -189,7 +189,7 @@ Enter VRF Subscription ID:
 
 Type your subscription ID number that you copied from your VRF subscription.
 
-#### 6. Treasury Address
+#### Treasury Address
 
 ```
 Enter treasury address (press Enter to keep treasury in lottery contract):
@@ -198,7 +198,7 @@ Enter treasury address (press Enter to keep treasury in lottery contract):
 - Leave empty and press Enter to keep fees in the lottery contract
 - OR paste a specific address where you want fees sent
 
-#### 7. Enable Trading
+#### Enable Trading
 
 ```
 Enable trading immediately after deployment? (Y/n)
